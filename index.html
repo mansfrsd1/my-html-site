@@ -1,177 +1,197 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Mohamed Abdo Salah</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      direction: rtl;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto 0;
-      background-color: #f3f3f3;
-      font-family: 'Cairo', sans-serif;
-    }
+    <meta charset="UTF-8">
+    <title>Mohamed Abdo Salah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            direction: rtl;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 0;
+            background-color: #f3f3f3;
+            font-family: 'Cairo', sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
 
-    .card {
-      background: #ffffff;
-      width: 380px;
-      padding: 5px;
-    }
+        .card {
+            background: #ffffff;
+            width: 380px;
+            padding: 5px;
+        }
 
-    .cardprint {
-      width: 370px;
-      background: #fff;
-      padding: 20px;
-      box-sizing: border-box;
-      position: relative;
-    }
+        .cardprint {
+            width: 370px;
+            background: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
 
-    .header {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 5px;
-    }
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0px;
+            margin-bottom: -20px;
+        }
 
-    .logo {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-    }
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
 
-    .header-title h1 {
-      font-size: 28px;
-      font-weight: bold;
-      color: #107c41;
-      margin: 0 10px;
-      white-space: nowrap;
-    }
+        .header-title h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #107c41;
+            margin: 0 10px;
+            white-space: nowrap;
+        }
 
-    .profile-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: -20px;
-      flex-direction: row-reverse;
-    }
+        .profile-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-top: -5px;
+            /* قلل المسافة من فوق */
+            margin-bottom: 0px;
+            /* خلي مفيش فراغ تحت */
+            flex-direction: row-reverse;
+        }
 
-    .profile-img,
-    .qr-img {
-      width: 155px;
-      height: 157px;
-      object-fit: cover;
-    }
+        .profile-img {
+            width: 155px;
+            height: 157px;
+            object-fit: cover;
+        }
 
-    .title {
-      text-align: center;
+        .qr-img {
+            width: 155px;
+            height: 157px;
+            object-fit: fill;
+            /* يملأ بدون حدود */
+        }
+
+        .title {
+            font-family: "Tajawal", "Segoe UI", sans-serif;
+              text-align: center;
       color: #107c41;
       font-weight: 700;
-      font-size: 30px;
-      margin-bottom: 5px;
-    }
+      font-size: 32px;
+      margin-bottom: 14px;
+        }
 
-    .info-all {
-      border: 1.5px solid #ccc;
-      padding: 10px;
-      padding-top: 12px;
-      border-radius: 10px;
-      margin-bottom: 12px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
+        .info-all {
+            border: 1.5px solid #ccc;
+            padding: 10px;
+            padding-top: 12px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-    .info-section {
-      border-top: 1.5px solid #ccc;
-      padding-top: 12px;
-      margin-bottom: 12px;
-    }
+        .info-section {
+            border-top: 1.5px solid #ccc;
+            padding-top: 12px;
+            margin-bottom: 12px;
+        }
 
-    .info-section-header {
-      color: #107c41;
-      font-weight: 900;
-      font-size: 15px;
-      margin-bottom: 12px;
-    }
+        .info-section-header {
+            color: #107c41;
+            font-weight: 900;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
 
-    .info-item {
-      display: flex;
-      justify-content: right;
-      margin-bottom: 8px;
-    }
+        .info-item {
+            display: flex;
+            justify-content: right;
+            margin-bottom: 8px;
+        }
 
-    .label {
-      font-size: 12px;
-      font-weight: 600;
-      color: #aaa;
-    }
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #aaa;
+        }
 
-    .value {
-      margin: auto 8px;
-      font-size: 15px;
-      font-weight: 700;
-      color: #222;
-    }
-  </style>
+        .value {
+            margin: auto 8px;
+            font-size: 15px;
+            font-weight: 450;
+            color: #222;
+            font-family: 'Cairo', 'Tahoma', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="card">
-    <div class="cardprint">
-      
-      <!-- الرأس -->
-      <div class="header">
-        <img src="pic/logo.png" alt="شعار الأمانة" class="logo">
-        <div class="header-title">
-          <h1>أمانة منطقة الرياض</h1>
-        </div>
-      </div>
+    <div class="card">
+        <div class="cardprint">
 
-      <!-- الصورة و QR Code -->
-      <div class="profile-section">
-        <img src="pic/22.jpg" alt="صورة الشخص" class="profile-img">
-        <img src="pic/frame .png" alt="QR Code" class="qr-img">
-      </div>
+            <!-- الرأس -->
+            <div class="header">
+                <img src="logo.png" alt="شعار الأمانة" class="logo">
+                <div class="header-title">
+                    <h1>أمانة منطقة الرياض</h1>
+                </div>
+            </div>
 
-      <!-- عنوان -->
-      <p class="title">شهادة صحية سنوية</p>
+            <!-- الصورة و QR Code -->
+            <div class="profile-section">
+                <img src="5969537562987055523.jpg" alt="صورة الشخص" class="profile-img">
+            </div>
 
-      <!-- باقي المعلومات -->
-      <div class="info-all">
-        <div class="info-section-header">بيانات الشهادة:</div>
-        <div class="info-item">
-          <span class="label">رقم الشهادة</span>
-          <span class="value">105923/1446</span>
-        </div>
-        <div class="info-item">
-          <span class="label">تاريخ الاصدار</span>
-          <span class="value">1447/01/13</span>
-        </div>
-        <div class="info-item">
-          <span class="label">نهاية الصلاحية</span>
-          <span class="value">1448/01/13</span>
-        </div>
+            <!-- عنوان -->
+            <p class="title">شهادة صحية سنوية</p>
 
-        <div class="info-section">
-          <div class="info-section-header">بيانات صاحب الشهادة:</div>
-          <div class="info-item"><span class="label">الاسم</span><span class="value">محمد عبده صلاح</span></div>
-          <div class="info-item"><span class="label">رقم الهوية</span><span class="value">2574262883</span></div>
-          <div class="info-item"><span class="label">الجنس</span><span class="value">ذكر</span></div>
-          <div class="info-item"><span class="label">الجنسية</span><span class="value">سعودي</span></div>
-          <div class="info-item"><span class="label">المهنة</span><span class="value">عامل</span></div>
-          <div class="info-item"><span class="label">البرنامج التثقيفي</span><span class="value">منشآت الغذاء</span></div>
-          <div class="info-item"><span class="label">تاريخ انتهاء البرنامج</span><span class="value">ص 10:35:07 1450/01/13</span></div>
-        </div>
+            <!-- باقي المعلومات -->
+            <div class="info-all">
+                <div class="info-section-header">بيانات الشهادة:</div>
+                <div class="info-item">
+                    <span class="label">رقم الشهادة</span>
+                    <span class="value">105832-1446</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">تاريخ الاصدار</span>
+                    <span class="value">1447/01/16</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">نهاية الصلاحية</span>
+                    <span class="value">1448/01/16</span>
+                </div>
 
-        <div class="info-section">
-          <div class="info-section-header">بيانات المنشأة:</div>
-          <div class="info-item"><span class="label">اسم المنشأة</span><span class="value">شركة المرعبين المحدودة</span></div>
-          <div class="info-item"><span class="label">رقم رخصة المنشأة</span><span class="value">7035489827</span></div>
+                <div class="info-section">
+                    <div class="info-section-header">بيانات صاحب الشهادة:</div>
+                     <div class="info-item"><span class="label">الاسم</span><span class="value">كامل عبده عباس</span>
+                    </div>
+                    <div class="info-item"><span class="label">رقم الهوية</span><span class="value">2490546674</span>
+                    </div>
+                    <div class="info-item"><span class="label">الجنس</span><span class="value">ذكر</span></div>
+                    <div class="info-item"><span class="label">الجنسية</span><span class="value">مصري</span></div>
+                    <div class="info-item"><span class="label">المهنة</span><span class="value">حلاق</span></div>
+                    <div class="info-item"><span class="label">البرنامج التثقيفي</span><span class="value">حلاقة</span></div>
+                    <div class="info-item"><span class="label">تاريخ انتهاء البرنامج</span><span class="value">
+                             ص 12:00:00 21/01/49 </span></div>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-section-header">بيانات المنشأة:</div>
+                    <div class="info-item"><span class="label">اسم المنشأة</span><span class="value">
+                            صالون شباب لبن للحلاقه</span></div>
+                    <div class="info-item"><span class="label">رقم رخصة المنشأة</span><span
+                            class="value">441112299080</span></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </body>
+
 </html>
